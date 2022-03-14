@@ -1,5 +1,5 @@
 import React from 'react';
-import Mail from '../../assets/images/mail.svg';
+import Mail from '../../assets/images/mail-2.svg';
 import {
   ContactContainer,
   EmailImg,
@@ -17,7 +17,7 @@ const Contact = () => {
       <ContactContent>
         <form action='#'>
           <FormWrap>
-            <label htmlFor='email'>
+            <label htmlFor='#'>
               <input type='text' placeholder='Enter Name' id='name' />
               <input type='email' placeholder='Enter Email' id='email' />
               <textarea

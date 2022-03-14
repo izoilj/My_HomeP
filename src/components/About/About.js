@@ -1,6 +1,6 @@
 import React from 'react';
 import { PersonalData } from './PersonalData';
-import SkillImg from '../../assets/images/skillImg-4.svg';
+import SkillImg from '../../assets/images/skillImg-1.svg';
 import {
   AboutContainer,
   AboutHeading,

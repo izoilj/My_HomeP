@@ -13,7 +13,8 @@ export const ContactContainer = styled.div`
 
 export const EmailImg = styled.img`
   margin-bottom: 5rem;
-  height: 30rem;
+  height: 25rem;
+  opacity: 85%;
 `;
 
 export const ContactHeading = styled.div`
