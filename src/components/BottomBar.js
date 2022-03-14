@@ -3,7 +3,7 @@ import Bot from '../assets/images/bot.png';
 import styled from 'styled-components';
 
 const BotImg = styled.img`
-  width: 100vw;
+  width: 100%;
 `;
 
 const BottomBar = () => {

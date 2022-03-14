@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 export const ProjectsContainer = styled.div`
+  width: 100%;
   padding: 7rem calc((100vw - 1300px) / 2);
   background: #ebe0ff;
   color: #fff;
