@@ -1,5 +1,4 @@
 import React from 'react';
-import { BasicButton } from '../BasicButton';
 import { ProjectsData } from './ProjectsData';
 import {
   ProjectsContainer,
@@ -8,24 +7,31 @@ import {
   ProjectsCard,
   ProjectsImg,
   ProjectsInfo,
+  ProjectsText,
+  ViewButton,
 } from './ProjectsElements';
 
-const PeojectsSection = () => {
+const Projects = () => {
   return (
     <>
       <ProjectsContainer id='projects'>
         <ProjectsH1>MY WORKS</ProjectsH1>
         <ProjectsWrapper>
           {ProjectsData.map((item, index) => (
-            <ProjectsCard key={index}>
+            <ProjectsCard
+              key={index}
+              imgStart={item.imgStart}
+              dark={item.dark}
+              round='true'
+            >
               <ProjectsImg src={item.img} alt={item.alt} />
-              <ProjectsInfo>
-                <h2>{item.title}</h2>
-                <span>{item.desc}</span>
-                <p>{item.skill}</p>
-                <BasicButton primary='true' dark='true'>
-                  VIEW MORE
-                </BasicButton>
+              <ProjectsInfo dark={item.dark}>
+                <ProjectsText inSide={item.inSide}>
+                  <h2>{item.title}</h2>
+                  <span>{item.desc}</span>
+                  <p>{item.skill}</p>
+                  <ViewButton>VIEW MORE</ViewButton>
+                </ProjectsText>
               </ProjectsInfo>
             </ProjectsCard>
           ))}
@@ -35,4 +41,4 @@ const PeojectsSection = () => {
   );
 };
 
-export default PeojectsSection;
+export default Projects;

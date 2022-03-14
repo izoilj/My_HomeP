@@ -13,7 +13,7 @@ const Contact = () => {
   return (
     <ContactContainer id='contact'>
       <EmailImg src={Mail} />
-      <ContactHeading>Contact</ContactHeading>
+      <ContactHeading>CONTACT</ContactHeading>
       <ContactContent>
         <form action='#'>
           <FormWrap>

@@ -9,6 +9,7 @@ export const ContactContainer = styled.div`
   justify-content: center;
   align-items: center;
   padding: 1.5rem calc((100vw - 1300px) / 2);
+  margin-bottom: 3rem;
 `;
 
 export const EmailImg = styled.img`

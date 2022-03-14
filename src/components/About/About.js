@@ -18,7 +18,7 @@ const About = () => {
   return (
     <>
       <AboutContainer id='about'>
-        <AboutHeading>About</AboutHeading>
+        <AboutHeading>AbOUT</AboutHeading>
         <AboutOne>
           {PersonalData.map((item, index) => (
             <AboutPersonality key={index}>

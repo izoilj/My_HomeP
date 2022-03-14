@@ -1,5 +1,5 @@
 // import React from 'react';
-import PmImg from '../../assets/images/ch1.png';
+import PmImg from '../../assets/images/pm.png';
 
 export const ProjectsData = [
   {
@@ -8,8 +8,11 @@ export const ProjectsData = [
     desc: 'Travel to over 100 unique places',
     img: PmImg,
     alt: 'Tian Tan Buddha',
-    button: 'View Details',
     skill: 'React / Styled-Component / GraphQL',
+    imgStart: false,
+    dark: true,
+    darkBtn: false,
+    primary: true,
   },
   {
     id: 'shop',
@@ -17,8 +20,11 @@ export const ProjectsData = [
     desc: 'Over 1 million trips completed last year',
     img: PmImg,
     alt: 'Tian Tan Buddha',
-    button: 'View Details',
     skill: 'React / Styled-Component / GraphQL',
+    imgStart: true,
+    dark: false,
+    darkBtn: true,
+    primary: true,
   },
   {
     id: 'shop',
@@ -26,16 +32,10 @@ export const ProjectsData = [
     desc: 'Access our support team 24/7',
     img: PmImg,
     alt: 'Tian Tan Buddha',
-    button: 'View Details',
     skill: 'React / Styled-Component / GraphQL',
-  },
-  {
-    id: 'shop',
-    title: 'Best Deals',
-    desc: 'We Offer the best prices',
-    img: PmImg,
-    alt: 'Tian Tan Buddha',
-    button: 'View Details',
-    skill: 'React / Styled-Component / GraphQL',
+    imgStart: false,
+    dark: true,
+    darkBtn: false,
+    primary: true,
   },
 ];

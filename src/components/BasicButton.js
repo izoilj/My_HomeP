@@ -14,6 +14,7 @@ export const BasicButton = styled(Link)`
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   font-weight: ${({ fontWeight }) => (fontWeight ? '600' : '400')};
+  box-shadow: 0 3px 5px 2px #a5a5a5;
 
   &:hover {
     transition: all 0.2s ease-in-out;
