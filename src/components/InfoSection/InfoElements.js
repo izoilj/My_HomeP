@@ -1,8 +1,8 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const InfoContainer = styled.div`
   color: #fff;
-  background: ${({ lightBg }) => (lightBg ? "#f9f9f9" : "#010606")};
+  background: ${({ lightBg }) => (lightBg ? '#f9f9f9' : '#060401')};
 
   @media screen and (max-width: 768px) {
     padding: 100px 0;
@@ -12,7 +12,9 @@ export const InfoContainer = styled.div`
 export const InfoWrapper = styled.div`
   display: grid;
   z-index: 1;
-  height: 860px;
+  /* height: 860px; */
+  /* height: 1200px; */
+  height: 90vh;
   width: 100%;
   max-width: 1100px;
   margin-right: auto;
@@ -21,8 +23,18 @@ export const InfoWrapper = styled.div`
   justify-content: center;
 `;
 
+// export const InfoSum = styled.div`
+//   max-width: 1100px;
+//   /* margin-bottom: 35px; */
+//   height: 100px;
+//   font-size: 18px;
+//   line-height: 24px;
+//   color: ${({ darkText }) => (darkText ? '#060401' : '#fff')};
+// `;
+
 export const InfoRow = styled.div`
   display: grid;
+  /* grid-auto-columns: minmax(2fr, 1fr); */
   grid-auto-columns: minmax(auto, 1fr);
   align-items: center;
   grid-template-areas: ${({ imgStart }) =>
@@ -32,6 +44,16 @@ export const InfoRow = styled.div`
     grid-template-areas: ${({ imgStart }) =>
       imgStart ? `"col1" "col2"` : `"col1 col1" "col2 col2"`};
   }
+`;
+
+export const InfoHeader = styled.div`
+  display: flex;
+  align-items: center;
+  max-width: 1100px;
+  font-size: 24px;
+  /* height: 100px; */
+  /* line-height: 24px; */
+  color: ${({ lightText }) => (lightText ? '#f7f8fa' : '#060401')};
 `;
 
 export const Column1 = styled.div`
@@ -53,7 +75,7 @@ export const TextWrapper = styled.div`
 `;
 
 export const TopLine = styled.p`
-  color: #01bf71;
+  color: #a47551;
   font-size: 16px;
   line-height: 16px;
   font-weight: 700;
@@ -68,7 +90,7 @@ export const Heading = styled.h1`
   font-size: 48px;
   line-height: 1.1;
   font-weight: 600;
-  color: ${({ lightText }) => (lightText ? "#f7f8fa" : "#010606")};
+  color: ${({ lightText }) => (lightText ? '#f7f8fa' : '#060401')};
 
   @media screen and (max-width: 480) {
     font-size: 32px;
@@ -80,7 +102,7 @@ export const SubTitle = styled.p`
   margin-bottom: 35px;
   font-size: 18px;
   line-height: 24px;
-  color: ${({ darkText }) => (darkText ? "#010606" : "#fff")};
+  color: ${({ darkText }) => (darkText ? '#060401' : '#fff')};
 `;
 
 export const BtnWrap = styled.div`

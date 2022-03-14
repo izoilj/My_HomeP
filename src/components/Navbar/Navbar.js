@@ -1,7 +1,7 @@
-import React, { useEffect, useState } from "react";
-import { FaBars } from "react-icons/fa";
-import { IconContext } from "react-icons/lib";
-import { animateScroll as scroll } from "react-scroll";
+import React, { useEffect, useState } from 'react';
+import { FaBars } from 'react-icons/fa';
+import { IconContext } from 'react-icons/lib';
+import { animateScroll as scroll } from 'react-scroll';
 import {
   Nav,
   NavebarContainer,
@@ -10,12 +10,8 @@ import {
   NavMenu,
   NavItem,
   NavLinks,
-  NavBtn,
-  NavBtnLink,
-} from "./NavbarElements";
+} from './NavbarElements';
 
-//여기 toggle 기능이 어디서 적용되는지 props를 보냄?갖고옴? 적용.
-//화면 크기에 따라 토글이 활용되는 메뉴 아이콘이 생성되고, 아니고 하는 기능. @media display
 const Navbar = ({ toggle }) => {
   const [scrollNav, setScrollNav] = useState(false);
 
@@ -28,7 +24,7 @@ const Navbar = ({ toggle }) => {
   };
 
   useEffect(() => {
-    window.addEventListener("scroll", changeNav);
+    window.addEventListener('scroll', changeNav);
   }, []);
 
   const toggleHome = () => {
@@ -38,11 +34,11 @@ const Navbar = ({ toggle }) => {
   return (
     <>
       {/* nav 햄버거 메뉴 색상 */}
-      <IconContext.Provider value={{ color: "#fff" }}>
+      <IconContext.Provider value={{ color: '#fff' }}>
         <Nav scrollNav={scrollNav}>
           <NavebarContainer>
-            <NavLogo to="/" onClick={toggleHome}>
-              dolla
+            <NavLogo to='/' onClick={toggleHome}>
+              JOYHOME
             </NavLogo>
             <MobileIcon onClick={toggle}>
               <FaBars />
@@ -50,57 +46,41 @@ const Navbar = ({ toggle }) => {
             <NavMenu>
               <NavItem>
                 <NavLinks
-                  to="about"
+                  to='about'
                   smooth={true}
                   duration={500}
                   spy={true}
-                  exact="true"
-                  offset={-80} //다음페이지로 넘어갈때 간격
-                  // activeClass="active" 이걸 설정해서 색상지정 가능하지만 우리는 스타일링에 포함했음 &.active에 포함
+                  exact='true'
+                  offset={-80}
                 >
-                  About
+                  ABOUT
                 </NavLinks>
               </NavItem>
               <NavItem>
                 <NavLinks
-                  to="discover"
+                  to='myWorks'
                   smooth={true}
                   duration={500}
                   spy={true}
-                  exact="true"
+                  exact='true'
                   offset={-80}
                 >
-                  Discover
+                  MY WORKS
                 </NavLinks>
               </NavItem>
               <NavItem>
                 <NavLinks
-                  to="services"
+                  to='contact'
                   smooth={true}
                   duration={500}
                   spy={true}
-                  exact="true"
+                  exact='true'
                   offset={-80}
                 >
-                  Services
-                </NavLinks>
-              </NavItem>
-              <NavItem>
-                <NavLinks
-                  to="signup"
-                  smooth={true}
-                  duration={500}
-                  spy={true}
-                  exact="true"
-                  offset={-80}
-                >
-                  Sign Up
+                  CONTACT
                 </NavLinks>
               </NavItem>
             </NavMenu>
-            <NavBtn>
-              <NavBtnLink to="/signin">Sign In</NavBtnLink>
-            </NavBtn>
           </NavebarContainer>
         </Nav>
       </IconContext.Provider>

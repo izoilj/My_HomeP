@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { Button } from "../ButtonElements";
+import React, { useState } from 'react';
+import { Button } from '../ButtonElements';
 import {
   HeroContainer,
   HeroBg,
@@ -8,10 +8,8 @@ import {
   HeroH1,
   HeroP,
   HeroBtnWrapper,
-  ArrowForward,
-  ArrowRight,
-} from "./HeroSectionElements";
-import Video from "../../assets/videos/video.mp4";
+} from './HeroSectionElements';
+import Video from '../../assets/videos/video3.mp4';
 
 const HeroSection = () => {
   const [hover, setHover] = useState(false);
@@ -21,30 +19,47 @@ const HeroSection = () => {
   };
 
   return (
-    <HeroContainer id="home">
+    <HeroContainer id='home'>
       <HeroBg>
-        <VideoBg autoPlay loop muted src={Video} type="video/mp4" />
+        <VideoBg autoPlay loop muted src={Video} type='video/mp4' />
       </HeroBg>
       <HeroContent>
-        <HeroH1>Virtual Banking Made Easy</HeroH1>
+        <HeroH1>
+          Hello, I am <span>Juyoung Lee</span>.
+        </HeroH1>
         <HeroP>
-          Sign up for a new account today and receive $250 in credit towareds
-          your next payment.
+          I'm a <span>Web Developer</span>.
         </HeroP>
         <HeroBtnWrapper>
           <Button
-            to="signup"
+            to='myWorks'
             onMouseEnter={onHover}
             onMouseLeave={onHover}
-            primary="true"
-            dark="true"
             smooth={true}
             duration={500}
             spy={true}
-            exact="true"
+            exact='true'
             offset={-80}
+            primary='true'
+            dark='true'
+            round='true'
+            fontBig='true'
+            // big='true'
+            css={`
+              height: 100px;
+
+              @media screen and (max-width: 768px) {
+                width: 100%;
+                min-width: 200px;
+              }
+
+              @media screen and (max-width: 400px) {
+                width: 100%;
+                min-width: 100px;
+              }
+            `}
           >
-            Get Started {hover ? <ArrowForward /> : <ArrowRight />}
+            VIEW PROJECTS
           </Button>
         </HeroBtnWrapper>
       </HeroContent>

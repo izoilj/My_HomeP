@@ -1,15 +1,15 @@
-import React, { useState } from "react";
-import HeroSection from "../components/HeroSection/HeroSection";
-import InfoSection from "../components/InfoSection/InfoSection";
+import React, { useState } from 'react';
+import HeroSection from '../components/HeroSection/HeroSection';
+import InfoSection from '../components/InfoSection/InfoSection';
 import {
-  homeObjOne,
-  homeObjThree,
-  homeObjTwo,
-} from "../components/InfoSection/Data";
-import Navbar from "../components/Navbar/Navbar";
-import Sidebar from "../components/Sidebar/Sidebar";
-import ServicesSection from "../components/Sevices/ServicesSection";
-import FooterSection from "../components/Footer/FooterSection";
+  homeAbout,
+  homeMyWorks,
+  homeContact,
+} from '../components/InfoSection/Data';
+import Navbar from '../components/Navbar/Navbar';
+import Sidebar from '../components/Sidebar/Sidebar';
+import ProjectSection from '../components/Sevices/ProjectSection';
+import FooterSection from '../components/Footer/FooterSection';
 
 const Home = () => {
   // 사이드바는 모바일크기일때만 메뉴버튼이 생성되고, 그때 동작이 다름
@@ -26,10 +26,10 @@ const Home = () => {
       <Sidebar isOpen={isOpen} toggle={toggle} />
       <Navbar toggle={toggle} />
       <HeroSection />
-      <InfoSection {...homeObjOne} />
-      <InfoSection {...homeObjTwo} />
-      <ServicesSection />
-      <InfoSection {...homeObjThree} />
+      <InfoSection {...homeAbout} />
+      <ProjectSection />
+      {/* <InfoSection {...homeMyWorks} /> */}
+      <InfoSection {...homeContact} />
       <FooterSection />
     </>
   );

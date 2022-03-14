@@ -1,7 +1,7 @@
-import styled from "styled-components";
-import { FaTimes } from "react-icons/fa";
-import { Link as LinkS } from "react-scroll";
-import { Link as LinkR } from "react-router-dom";
+import styled from 'styled-components';
+import { FaTimes } from 'react-icons/fa';
+import { Link as LinkS } from 'react-scroll';
+import { Link as LinkR } from 'react-router-dom';
 
 export const SidebarContainer = styled.aside`
   position: fixed;
@@ -15,12 +15,18 @@ export const SidebarContainer = styled.aside`
   left: 0;
   transition: 0.3s ease-in-out;
   /*  */
-  opacity: ${({ isOpen }) => (isOpen ? "100%" : "0")};
-  top: ${({ isOpen }) => (isOpen ? "0" : "-100%")};
+  opacity: ${({ isOpen }) => (isOpen ? '100%' : '0')};
+  top: ${({ isOpen }) => (isOpen ? '0' : '-100%')};
 `;
 
 export const CloseIcon = styled(FaTimes)`
-  color: #fff;
+  color: #474747;
+
+  &:hover {
+    color: #fff;
+    transform: scale(1.02);
+    transition: 0.2s ease-in-out;
+  }
 `;
 
 export const Icon = styled.div`
@@ -40,7 +46,7 @@ export const SidebarWrapper = styled.div`
 export const SidebarMenu = styled.ul`
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(6, 80px);
+  grid-template-rows: repeat(3, 80px);
   text-align: center;
 
   @media screen and (max-width: 480px) {
@@ -53,6 +59,7 @@ export const SidebarLinks = styled(LinkS)`
   align-items: center;
   justify-content: center;
   font-size: 1.5rem;
+  font-weight: 600;
   text-decoration: none;
   list-style: none;
   transition: 0.2s ease-in-out;
@@ -60,7 +67,8 @@ export const SidebarLinks = styled(LinkS)`
   cursor: pointer;
 
   &:hover {
-    color: #01bf71;
+    color: #a47551;
+    transform: scale(1.02);
     transition: 0.2s ease-in-out;
   }
 `;
@@ -72,10 +80,10 @@ export const SideBtnWrap = styled.div`
 
 export const SidebarRouter = styled(LinkR)`
   border-radius: 50px;
-  background: #01bf71;
+  background: #a47551;
   white-space: nowrap;
   padding: 16px 64px;
-  color: #010606;
+  color: #fff;
   font-size: 16px;
   outline: none;
   border: none;
@@ -86,6 +94,6 @@ export const SidebarRouter = styled(LinkR)`
   &:hover {
     transition: all 0.2s ease-in-out;
     background: #fff;
-    color: #010606;
+    color: #060401;
   }
 `;

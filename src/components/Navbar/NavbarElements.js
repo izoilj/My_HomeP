@@ -1,12 +1,12 @@
-import styled from "styled-components";
-import { Link as LinkR } from "react-router-dom";
-import { Link as LinkS } from "react-scroll";
+import styled from 'styled-components';
+import { Link as LinkR } from 'react-router-dom';
+import { Link as LinkS } from 'react-scroll';
 
 export const Nav = styled.nav`
   background: ${({ scrollNav }) =>
     scrollNav
-      ? "#000"
-      : "transparent"}; //스크롤작동하면 #000색상 멈추면 다시돌아옴
+      ? '#060401'
+      : 'transparent'}; //스크롤작동하면 #000색상 멈추면 다시돌아옴
   height: 80px;
   margin-top: -80px;
   display: flex;
@@ -30,7 +30,7 @@ export const NavebarContainer = styled.div`
   z-index: 1;
   width: 100%;
   padding: 0 24px;
-  max-width: 1100px;
+  max-width: 2100px;
 `;
 
 export const NavLogo = styled(LinkR)`
@@ -65,7 +65,7 @@ export const NavMenu = styled.ul`
   align-items: center;
   list-style: none;
   text-align: center;
-  margin-right: -22px;
+  /* margin-right: -22px; */
 
   @media screen and (max-width: 768px) {
     display: none;
@@ -84,37 +84,15 @@ export const NavLinks = styled(LinkS)`
   padding: 0 1rem;
   height: 100%;
   cursor: pointer;
-
-  &.active {
-    border-bottom: 3px solid #01bf71;
-  }
-`;
-
-export const NavBtn = styled.nav`
-  display: flex;
-  align-items: center;
-
-  @media screen and (max-width: 768px) {
-    display: none;
-  }
-`;
-
-export const NavBtnLink = styled(LinkR)`
-  border-radius: 50px;
-  background: #01bf71;
-  white-space: nowrap; //
-  padding: 10px 22px;
-  color: #010606;
-  font-size: 16px;
-  outline: none;
-  border: none;
-  cursor: pointer;
-  transition: all 0.2s ease-in-out;
-  text-decoration: none;
+  font-weight: 600;
 
   &:hover {
     transition: all 0.2s ease-in-out;
-    background: #fff;
-    color: #010606;
+    color: #bb98ff;
+  }
+
+  &.active {
+    border-bottom: 5px solid #bb98ff;
+    color: #bb98ff;
   }
 `;

@@ -1,18 +1,17 @@
-import styled from "styled-components";
-import { MdArrowForward, MdKeyboardArrowRight } from "react-icons/md";
+import styled from 'styled-components';
 
 export const HeroContainer = styled.div`
   background: #0c0c0c;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0 30px;
-  height: 800px;
+  padding: 0 1rem;
+  height: 95vh;
   position: relative;
   z-index: 1;
 
   :before {
-    content: "";
+    content: '';
     position: absolute;
     top: 0;
     left: 0;
@@ -20,8 +19,8 @@ export const HeroContainer = styled.div`
     bottom: 0;
     background: linear-gradient(
         180deg,
-        rgba(0, 0, 0, 0.2) 0%,
-        rgba(0, 0, 0, 0.6) 100%
+        rgba(0, 0, 0, 0.4) 0%,
+        rgba(0, 0, 0, 0.8) 100%
       ),
       linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, transparent 100%);
     z-index: 2;
@@ -44,7 +43,8 @@ export const VideoBg = styled.video`
   height: 100%;
   -o-object-fit: cover;
   object-fit: cover;
-  background: #232a34;
+  /* background: #2e2714; */
+  opacity: 80%;
 `;
 
 export const HeroContent = styled.div`
@@ -59,49 +59,28 @@ export const HeroContent = styled.div`
 
 export const HeroH1 = styled.h1`
   color: #fff;
-  font-size: 48px;
+  font-size: clamp(1.2rem, 5vw, 4rem);
+  padding: 0 1rem;
   text-align: center;
+  margin-bottom: 1.5rem;
 
-  @media screen and (max-width: 768px) {
-    font-size: 40px;
-  }
-
-  @media screen and (max-width: 480px) {
-    font-size: 32px;
+  span {
+    color: #955eff;
   }
 `;
 
 export const HeroP = styled.p`
-  margin-top: 24px;
+  margin-bottom: 2rem;
   color: #fff;
-  font-size: 24px;
+  font-size: clamp(1rem, 3vw, 3rem);
   text-align: center;
   max-width: 600px;
 
-  @media screen and (max-width: 768px) {
-    font-size: 24px;
-  }
-
-  @media screen and (max-width: 480px) {
-    font-size: 18px;
+  span {
+    font-weight: 600;
   }
 `;
 
 export const HeroBtnWrapper = styled.div`
   margin-top: 32px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-`;
-
-// export const Button = styled.div``;
-
-export const ArrowForward = styled(MdArrowForward)`
-  margin-left: 8px;
-  font-size: 20px;
-`;
-
-export const ArrowRight = styled(MdKeyboardArrowRight)`
-  margin-left: 8px;
-  font-size: 20px;
 `;

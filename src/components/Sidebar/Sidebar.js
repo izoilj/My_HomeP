@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 import {
   SidebarContainer,
   Icon,
@@ -8,7 +8,7 @@ import {
   SidebarLinks,
   SideBtnWrap,
   SidebarRouter,
-} from "./SidebarElements";
+} from './SidebarElements';
 
 // 화면사이즈가 작아졌을때 필요한 컴포넌트
 // isOpen이 True일때,
@@ -21,21 +21,21 @@ const Sidebar = ({ isOpen, toggle }) => {
       </Icon>
       <SidebarWrapper>
         <SidebarMenu>
-          <SidebarLinks to="about" onClick={toggle}>
-            About
+          <SidebarLinks to='about' onClick={toggle}>
+            ABOUT
           </SidebarLinks>
-          <SidebarLinks to="discover" onClick={toggle}>
-            Discover
+          <SidebarLinks to='discover' onClick={toggle}>
+            PROJECTS
           </SidebarLinks>
-          <SidebarLinks to="services" onClick={toggle}>
+          {/* <SidebarLinks to="services" onClick={toggle}>
             Services
-          </SidebarLinks>
-          <SidebarLinks to="signup" onClick={toggle}>
-            Sign Up
+          </SidebarLinks> */}
+          <SidebarLinks to='signup' onClick={toggle}>
+            CONTACT
           </SidebarLinks>
         </SidebarMenu>
         <SideBtnWrap>
-          <SidebarRouter to="/signin">Sign In</SidebarRouter>
+          {/* <SidebarRouter to='/signin'>JYL</SidebarRouter> */}
         </SideBtnWrap>
       </SidebarWrapper>
     </SidebarContainer>
