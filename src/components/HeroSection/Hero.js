@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { Button } from '../ButtonElements';
+import React from 'react';
+import { ColorButton } from '../ColorButton';
 import {
   HeroContainer,
   HeroBg,
@@ -8,16 +8,10 @@ import {
   HeroH1,
   HeroP,
   HeroBtnWrapper,
-} from './HeroSectionElements';
+} from './HeroElements';
 import Video from '../../assets/videos/video3.mp4';
 
-const HeroSection = () => {
-  const [hover, setHover] = useState(false);
-
-  const onHover = () => {
-    setHover(!hover);
-  };
-
+const Hero = () => {
   return (
     <HeroContainer id='home'>
       <HeroBg>
@@ -31,40 +25,24 @@ const HeroSection = () => {
           I'm a <span>Web Developer</span>.
         </HeroP>
         <HeroBtnWrapper>
-          <Button
-            to='myWorks'
-            onMouseEnter={onHover}
-            onMouseLeave={onHover}
+          <ColorButton
+            to='projects'
+            exact='true'
             smooth={true}
             duration={500}
             spy={true}
-            exact='true'
             offset={-80}
             primary='true'
             dark='true'
             round='true'
             fontBig='true'
-            // big='true'
-            css={`
-              height: 100px;
-
-              @media screen and (max-width: 768px) {
-                width: 100%;
-                min-width: 200px;
-              }
-
-              @media screen and (max-width: 400px) {
-                width: 100%;
-                min-width: 100px;
-              }
-            `}
           >
             VIEW PROJECTS
-          </Button>
+          </ColorButton>
         </HeroBtnWrapper>
       </HeroContent>
     </HeroContainer>
   );
 };
 
-export default HeroSection;
+export default Hero;

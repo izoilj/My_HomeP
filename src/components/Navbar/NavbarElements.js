@@ -5,7 +5,7 @@ import { Link as LinkS } from 'react-scroll';
 export const Nav = styled.nav`
   background: ${({ scrollNav }) =>
     scrollNav
-      ? '#060401'
+      ? '#000'
       : 'transparent'}; //스크롤작동하면 #000색상 멈추면 다시돌아옴
   height: 80px;
   margin-top: -80px;
@@ -66,6 +66,7 @@ export const NavMenu = styled.ul`
   list-style: none;
   text-align: center;
   /* margin-right: -22px; */
+  /* width: 400px; */
 
   @media screen and (max-width: 768px) {
     display: none;
@@ -81,7 +82,7 @@ export const NavLinks = styled(LinkS)`
   display: flex;
   align-items: center;
   text-decoration: none;
-  padding: 0 1rem;
+  padding: 0 2rem;
   height: 100%;
   cursor: pointer;
   font-weight: 600;
