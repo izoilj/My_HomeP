@@ -17,6 +17,12 @@ export const AboutHeading = styled.div`
   font-size: clamp(1.2rem, 5vw, 3rem);
   font-weight: 600;
   /* padding: 0 2rem; */
+  /* margin-bottom: 7rem; */
+`;
+
+export const AboutP = styled.p`
+  font-size: clamp(0.5rem, 3vw, 1.5rem);
+  color: #8a2be2;
   margin-bottom: 7rem;
 `;
 

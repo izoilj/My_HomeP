@@ -22,7 +22,14 @@ export const ContactHeading = styled.div`
   text-align: center;
   font-size: clamp(1.2rem, 5vw, 3rem);
   font-weight: 600;
-  margin-bottom: 2rem;
+  /* margin-bottom: 2rem; */
+`;
+
+export const ContactP = styled.p`
+  font-size: clamp(0.5rem, 3vw, 1.2rem);
+  color: #8a2be2;
+  margin-bottom: 3rem;
+  text-align: center;
 `;
 
 export const ContactContent = styled.div`

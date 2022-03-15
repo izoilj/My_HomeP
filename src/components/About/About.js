@@ -4,6 +4,7 @@ import SkillImg from '../../assets/images/skillImg-1.svg';
 import {
   AboutContainer,
   AboutHeading,
+  AboutP,
   AboutImg,
   AboutOne,
   AboutPersonality,
@@ -18,7 +19,8 @@ const About = () => {
   return (
     <>
       <AboutContainer id='about'>
-        <AboutHeading>AbOUT</AboutHeading>
+        <AboutHeading>ABOUT</AboutHeading>
+        <AboutP>Who am I?</AboutP>
         <AboutOne>
           {PersonalData.map((item, index) => (
             <AboutPersonality key={index}>

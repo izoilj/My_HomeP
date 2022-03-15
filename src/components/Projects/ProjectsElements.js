@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { MdOpenInNew } from 'react-icons/md';
 
 export const ProjectsContainer = styled.div`
   width: 100%;
@@ -14,15 +15,18 @@ export const ProjectsContainer = styled.div`
 export const ProjectsH1 = styled.h1`
   font-size: clamp(1.2rem, 5vw, 3rem);
   text-align: center;
-  margin-bottom: 7rem;
   color: #000;
+  /* margin-bottom: 7rem; */
+`;
+
+export const ProjectP = styled.p`
+  font-size: clamp(0.5rem, 3vw, 1.5rem);
+  color: #8a2be2;
+  margin-bottom: 7rem;
 `;
 
 export const ProjectsWrapper = styled.div`
-  /* display: flex;
-  flex-direction: column; */
   display: grid;
-  /* grid-template-columns: repeat(4, 1fr); */
   grid-template-rows: 1fr 1fr;
   justify-content: center;
   padding: 0 2rem;
@@ -47,7 +51,6 @@ export const ProjectsCard = styled.div`
     filter: grayscale(0%);
     transform: scale(1.05);
     transition: 0.2s;
-    /* cursor: pointer; */
     color: #000;
   }
 
@@ -55,7 +58,6 @@ export const ProjectsCard = styled.div`
     grid-template-columns: 1fr;
     grid-template-areas: ${({ imgStart }) =>
       imgStart ? `"col1 col1" "col2 col2"` : `"col1 col1" "col2 col2"`};
-    /* grid-gap: 5px; */
     height: 30%;
     margin-bottom: 10rem;
 
@@ -63,7 +65,6 @@ export const ProjectsCard = styled.div`
       filter: grayscale(0%);
       transform: scale(1.01);
       transition: 0.2s;
-      /* cursor: pointer; */
       color: #000;
     }
   }
@@ -122,10 +123,6 @@ export const ProjectsText = styled.div`
   justify-content: center;
   align-items: center;
   z-index: 20;
-
-  /* @media screen and (max-width: 8200px) {
-    align-items: center;
-  } */
 `;
 
 export const ViewButton = styled.button`
@@ -136,11 +133,17 @@ export const ViewButton = styled.button`
   border: none;
   border-radius: 20px;
   cursor: pointer;
-  /* transition: 0.3s */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   &:hover {
     font-weight: 600;
-    /* transform: translateY(-2px); */
     background: #8a2be2;
   }
+`;
+
+export const OpenIcon = styled(MdOpenInNew)`
+  font-size: 1rem;
+  margin-left: 0.5rem;
 `;

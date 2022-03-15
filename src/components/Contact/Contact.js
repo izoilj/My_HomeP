@@ -4,6 +4,7 @@ import {
   ContactContainer,
   EmailImg,
   ContactHeading,
+  ContactP,
   ContactContent,
   FormWrap,
 } from './ContactElements';
@@ -14,6 +15,11 @@ const Contact = () => {
     <ContactContainer id='contact'>
       <EmailImg src={Mail} />
       <ContactHeading>CONTACT</ContactHeading>
+      <ContactP>
+        I am currently looking for any new opportunities! <br />
+        If you have any question, please contact to me by the email.
+      </ContactP>
+
       <ContactContent>
         <form action='#'>
           <FormWrap>
