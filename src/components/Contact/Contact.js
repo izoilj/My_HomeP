@@ -17,7 +17,7 @@ const Contact = () => {
       <ContactHeading>CONTACT</ContactHeading>
       <ContactP>
         I am currently looking for any new opportunities! <br />
-        If you have any question, please contact to me by the email.
+        If you have any questions, please contact me by email.
       </ContactP>
 
       <ContactContent>

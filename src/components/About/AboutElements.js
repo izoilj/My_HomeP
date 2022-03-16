@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 
 export const AboutContainer = styled.div`
-  /* height: 100vh; */
   width: 100%;
   background: #fff;
   color: #000;
@@ -16,8 +15,6 @@ export const AboutHeading = styled.div`
   text-align: center;
   font-size: clamp(1.2rem, 5vw, 3rem);
   font-weight: 600;
-  /* padding: 0 2rem; */
-  /* margin-bottom: 7rem; */
 `;
 
 export const AboutP = styled.p`
@@ -33,7 +30,6 @@ export const AboutOne = styled.div`
   justify-items: center;
   padding: 0 2rem;
   margin-bottom: 10rem;
-  /* margin-top: 7rem; */
 
   @media screen and (max-width: 1200px) {
     grid-template-columns: 1fr 1fr;
@@ -45,7 +41,6 @@ export const AboutOne = styled.div`
 `;
 
 export const AboutPersonality = styled.div`
-  /* background: grey; */
   text-align: center;
   color: #000;
   width: 100%;

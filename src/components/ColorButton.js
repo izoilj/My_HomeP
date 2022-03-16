@@ -2,7 +2,6 @@ import styled from 'styled-components';
 import { Link } from 'react-scroll';
 
 export const ColorButton = styled(Link)`
-  /* background: ${({ primary }) => (primary ? '#7aa920' : '#dcff9a')}; */
   background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
   background-size: 400%;
   padding: ${({ big }) => (big ? '14px 48px' : '12px 30px')};
@@ -19,7 +18,6 @@ export const ColorButton = styled(Link)`
   &:hover {
     color: ${({ dark }) => (dark ? '#000' : '#fff')};
     animation: animate 6s linear infinite;
-    
   }
 
   &:before {
@@ -32,11 +30,10 @@ export const ColorButton = styled(Link)`
     z-index: -1;
     background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
     background-size: 400%;
-    border-radius: 999px;
+    border-radius: 25px;
     filter: blur(20px);
     opacity: 0;
     transition: 0.3s;
-
   }
 
   &:hover:before {
@@ -52,5 +49,4 @@ export const ColorButton = styled(Link)`
   100% {
     background-position: 400%;
   }
-
 `;
