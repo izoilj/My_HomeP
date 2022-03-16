@@ -35,7 +35,6 @@ const Hero = () => {
             primary='true'
             dark='true'
             round='true'
-            fontBig='true'
           >
             VIEW PROJECTS
           </ColorButton>

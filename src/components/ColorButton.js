@@ -6,7 +6,7 @@ export const ColorButton = styled(Link)`
   background-size: 400%;
   padding: ${({ big }) => (big ? '14px 48px' : '12px 30px')};
   color: ${({ dark }) => (dark ? '#fff' : '#000')};
-  font-size: ${({ fontBig }) => (fontBig ? '20px' : '14px')};
+  font-size: 20px;
   border-radius: ${({ round }) => (round ? '25px' : 'none')};
   white-space: nowrap;
   outline: none;
@@ -20,7 +20,7 @@ export const ColorButton = styled(Link)`
     animation: animate 6s linear infinite;
   }
 
-  &:before {
+  /* &:before {
     content: '';
     position: absolute;
     top: 225px;
@@ -48,5 +48,5 @@ export const ColorButton = styled(Link)`
   }
   100% {
     background-position: 400%;
-  }
+  } */
 `;
