@@ -41,7 +41,7 @@ export const ProjectsCard = styled.div`
   justify-items: center;
   align-items: center;
   margin-bottom: 7rem;
-  filter: grayscale(50%);
+  filter: grayscale(80%);
   box-shadow: 0 3px 5px 2px #a5a5a5;
 
   grid-template-areas: ${({ imgStart }) =>
@@ -93,6 +93,11 @@ export const ProjectsInfo = styled.div`
   padding: 0 2rem;
   z-index: 10;
   grid-area: col2;
+
+  h2 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+  }
 
   span {
     margin-bottom: 3rem;
@@ -183,7 +188,7 @@ export const CloseButton = styled.button`
 
   &:hover {
     font-weight: 600;
-    color: black;
+    color: #ccc;
   }
 `;
 

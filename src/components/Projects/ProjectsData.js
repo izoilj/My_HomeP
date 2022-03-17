@@ -1,11 +1,12 @@
 // import React from 'react';
 import PmImg from '../../assets/images/pm.png';
+import ShopImg from '../../assets/images/p2.png';
 
 export const ProjectsData = [
   {
     id: 'pmTool',
-    title: 'Project Managrment',
-    desc: 'Travel to over 100 unique places',
+    title: 'Project Managrment Tools',
+    desc: 'Provide a services to customer for managing the project with team',
     img: PmImg,
     alt: 'Project Management Web',
     skill: 'React / Styled-Component / GraphQL',
@@ -16,12 +17,12 @@ export const ProjectsData = [
     primary: true,
   },
   {
-    id: 'shop',
-    title: '1 Million Tip Made',
-    desc: 'Over 1 million trips completed last year',
-    img: PmImg,
-    alt: 'Tian Tan Buddha',
-    skill: 'React / Styled-Component / GraphQL',
+    id: 'ecommerce',
+    title: 'Ecommerce Website',
+    desc: 'Provide a services to customer for managing the project with team',
+    img: ShopImg,
+    alt: 'ecommerce',
+    skill: 'React / NodeJS / Redux / MongoDB / RestAPI',
     url: '//capstone-pm-tools-joy.netlify.app/',
     imgStart: true,
     dark: false,
@@ -29,12 +30,12 @@ export const ProjectsData = [
     primary: true,
   },
   {
-    id: 'shop',
-    title: 'Fastest Support',
-    desc: 'Access our support team 24/7',
+    id: 'blog',
+    title: 'Blog Website',
+    desc: 'Made self-blog for postig my record',
     img: PmImg,
-    alt: 'Tian Tan Buddha',
-    skill: 'React / Styled-Component / GraphQL',
+    alt: 'blog',
+    skill: 'Gatsby / TypeScript / EmotionJS / GraphQL',
     url: '//capstone-pm-tools-joy.netlify.app/',
     imgStart: false,
     dark: true,

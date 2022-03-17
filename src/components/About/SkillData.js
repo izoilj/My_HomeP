@@ -18,7 +18,7 @@ export const SkillData = [
   {
     icon: <MdSpeed />,
     name: 'BACKEND',
-    list: ['GraphQL', 'MySQL', 'MongoDB', 'Mongoose', 'Git'],
+    list: ['GraphQL', 'MySQL', 'MongoDB', 'Mongoose', 'NodeJS'],
   },
   // {
   //   icon: <MdSpeed />,
@@ -27,7 +27,7 @@ export const SkillData = [
   // },
   {
     icon: <MdSpeed />,
-    name: 'ADOBE',
-    list: ['XD', 'Photoshop', 'illustlation', 'primire'],
+    name: '',
+    list: ['Netlify', 'Git', 'AdobeXD', 'Photoshop', 'illustlator'],
   },
 ];

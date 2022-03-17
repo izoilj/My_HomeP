@@ -34,6 +34,7 @@ export const ContactP = styled.p`
 
 export const ContactContent = styled.div`
   margin-bottom: 3rem;
+  width: 400px;
 
   form {
     z-index: 10;
@@ -45,11 +46,6 @@ export const FormWrap = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
-  label {
-    width: 80%;
-    opacity: 70%;
-  }
 
   input {
     padding: 1rem 1.5rem;
@@ -73,7 +69,7 @@ export const FormWrap = styled.div`
     outline: none;
     border: none;
     border-radius: 10px;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
     width: 100%;
     background: #c3bfca;
 

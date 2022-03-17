@@ -27,9 +27,11 @@ const customStyles = {
     bottom: 'auto',
     marginRight: '-50%',
     transform: 'translate(-50%, -50%)',
+    border: '1px solid #ccc',
     width: '40%',
     height: '60%',
     padding: '0',
+    // backgroundColor: 'rgba(0, 0, 0, 0.75)',
   },
 };
 
@@ -50,19 +52,19 @@ const Projects = () => {
         <ProjectsH1>MY PROJECTS</ProjectsH1>
         <ProjectP>Somthing I have built</ProjectP>
         <ProjectsWrapper>
-          {ProjectsData.map((item, index) => (
+          {ProjectsData?.map((item, index) => (
             <ProjectsCard
               key={index}
               imgStart={item.imgStart}
               dark={item.dark}
               round='true'
             >
-              <ProjectsImg src={item.img} alt={item.alt} />
+              <ProjectsImg src={item?.img} alt={item?.alt} />
               <ProjectsInfo dark={item.dark}>
                 <ProjectsText inSide={item.inSide}>
-                  <h2>{item.title}</h2>
-                  <span>{item.desc}</span>
-                  <p>{item.skill}</p>
+                  <h2>{item?.title}</h2>
+                  <span>{item?.desc}</span>
+                  <p>{item?.skill}</p>
                   <DetaileButton onClick={openModal}>
                     VIEW DETAILS
                   </DetaileButton>

@@ -9,8 +9,36 @@ import {
   FormWrap,
 } from './ContactElements';
 import { BasicButton } from '../BasicButton';
+import emailjs from 'emailjs-com';
+import Swal from 'sweetalert2';
+
+const SERVICE_ID = 'service_5bjuah1';
+const TEMPLATE_ID = 'template_5gwuk3g';
+const USER_ID = 'Fj7jfjaLYpqRhpTr5';
 
 const Contact = () => {
+  const handleOnSubmit = (e) => {
+    e.preventDefault();
+    emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, e.target, USER_ID).then(
+      (result) => {
+        console.log(result.text);
+        Swal.fire({
+          icon: 'success',
+          title: 'Message Sent Successfully',
+        });
+      },
+      (error) => {
+        console.log(error.text);
+        Swal.fire({
+          icon: 'error',
+          title: 'Ooops, something went wrong',
+          text: error.text,
+        });
+      }
+    );
+    e.target.reset();
+  };
+
   return (
     <ContactContainer id='contact'>
       <EmailImg src={Mail} />
@@ -21,18 +49,26 @@ const Contact = () => {
       </ContactP>
 
       <ContactContent>
-        <form action='#'>
+        <form onSubmit={handleOnSubmit}>
           <FormWrap>
-            <label htmlFor='#'>
-              <input type='text' placeholder='Enter Name' id='name' />
-              <input type='email' placeholder='Enter Email' id='email' />
-              <textarea
-                placeholder='Your Message'
-                id='msg'
-                rows='8'
-                // cols='75'
-              />
-            </label>
+            <input
+              type='text'
+              name='name'
+              placeholder='Enter your name...'
+              required
+            />
+            <input
+              type='email'
+              name='email'
+              placeholder='Enter your email...'
+              required
+            />
+            <textarea
+              placeholder='Your message...'
+              name='message'
+              rows='8'
+              required
+            />
             <BasicButton
               as='button'
               type='submit'
