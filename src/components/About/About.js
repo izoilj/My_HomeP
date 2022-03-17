@@ -39,8 +39,8 @@ const About = () => {
             {SkillData.map((skill, key) => (
               <Aboutlists key={key}>
                 {skill.name}
-                {skill.list.map((s) => (
-                  <Skill>{s}</Skill>
+                {skill.list.map((s, i) => (
+                  <Skill key={i}>{s}</Skill>
                 ))}
               </Aboutlists>
             ))}
