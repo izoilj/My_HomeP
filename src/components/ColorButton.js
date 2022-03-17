@@ -18,28 +18,7 @@ export const ColorButton = styled(Link)`
   &:hover {
     color: ${({ dark }) => (dark ? '#000' : '#fff')};
     animation: animate 6s linear infinite;
-  }
-
-  /* &:before {
-    content: '';
-    position: absolute;
-    top: 225px;
-    left: 310px;
-    right: 310px;
-    bottom: -5px;
-    z-index: -1;
-    background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
-    background-size: 400%;
-    border-radius: 25px;
-    filter: blur(20px);
-    opacity: 0;
-    transition: 0.3s;
-  }
-
-  &:hover:before {
-    filter: blur(10px);
-    opacity: 1;
-    animation: animate 6s linear infinite;
+    box-shadow: 0px 0px 15px 10px rgba(116, 79, 168, 0.75);
   }
 
   @keyframes animate {
@@ -48,5 +27,5 @@ export const ColorButton = styled(Link)`
   }
   100% {
     background-position: 400%;
-  } */
+  }
 `;

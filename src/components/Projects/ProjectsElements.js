@@ -77,6 +77,7 @@ export const ProjectsImg = styled.img`
   position: relative;
   grid-area: col1;
   box-shadow: 0 3px 5px 2px #a5a5a5;
+  /* z-index: 100; */
 
   @media screen and (max-width: 820px) {
     margin-bottom: 3rem;
@@ -125,7 +126,7 @@ export const ProjectsText = styled.div`
   z-index: 20;
 `;
 
-export const ViewButton = styled.button`
+export const DetaileButton = styled.button`
   background: #955eff;
   color: #fff;
   padding: 0.7rem 1rem;
@@ -143,7 +144,70 @@ export const ViewButton = styled.button`
   }
 `;
 
+export const ModalImg = styled.img`
+  width: 100%;
+  /* height: 90%; */
+  max-width: 100%;
+  object-fit: contain;
+
+  @media screen and (max-width: 820px) {
+    margin-bottom: 3rem;
+  }
+`;
+
+export const ModalInfo = styled.div`
+  padding: 0.5rem 2rem;
+
+  /* span {
+    margin-top: 5rem;
+  } */
+`;
+
 export const OpenIcon = styled(MdOpenInNew)`
   font-size: 1rem;
   margin-left: 0.5rem;
+`;
+
+export const CloseButton = styled.button`
+  background: #955eff;
+  width: 100%;
+  height: 2rem;
+  text-align: right;
+  color: #fff;
+  outline: none;
+  border: none;
+  padding-right: 1rem;
+  cursor: pointer;
+  float: right;
+  font-size: 18px;
+
+  &:hover {
+    font-weight: 600;
+    color: black;
+  }
+`;
+
+export const ModalTopLine = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+`;
+
+export const ViewButton = styled.button`
+  background: #955eff;
+  color: #fff;
+  padding: 0.7rem 1rem;
+  outline: none;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &:hover {
+    font-weight: 600;
+    background: #8a2be2;
+  }
 `;

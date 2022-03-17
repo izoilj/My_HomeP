@@ -1,5 +1,6 @@
 import React from 'react';
 import { PersonalData } from './PersonalData';
+import { SkillData } from './SkillData';
 import SkillImg from '../../assets/images/skillImg-1.svg';
 import {
   AboutContainer,
@@ -8,11 +9,13 @@ import {
   AboutImg,
   AboutOne,
   AboutPersonality,
-  AboutSkill,
+  AboutSkills,
   AboutTwo,
   Description,
   Icon,
   Title,
+  Skill,
+  Aboutlists,
 } from './AboutElements';
 
 const About = () => {
@@ -32,8 +35,16 @@ const About = () => {
         </AboutOne>
         <AboutTwo>
           <AboutImg src={SkillImg} />
-          <AboutSkill src={SkillImg} />
-          {/* <AboutSkill>skill chart</AboutSkill> */}
+          <AboutSkills>
+            {SkillData.map((skill, key) => (
+              <Aboutlists key={key}>
+                {skill.name}
+                {skill.list.map((s) => (
+                  <Skill>{s}</Skill>
+                ))}
+              </Aboutlists>
+            ))}
+          </AboutSkills>
         </AboutTwo>
       </AboutContainer>
     </>

@@ -62,9 +62,10 @@ export const Description = styled.p``;
 export const AboutTwo = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 30px;
-  padding: 0 2rem;
+  grid-gap: 10px;
   justify-items: center;
+  align-items: center;
+  padding: 0 2rem;
   margin-bottom: 3rem;
 
   @media screen and (max-width: 1200px) {
@@ -78,7 +79,7 @@ export const AboutTwo = styled.div`
 `;
 
 export const AboutImg = styled.img`
-  height: 25rem;
+  height: 22rem;
 
   @media screen and (max-width: 1200px) {
     height: 20rem;
@@ -90,10 +91,29 @@ export const AboutImg = styled.img`
   }
 `;
 
-export const AboutSkill = styled.img`
+export const AboutSkills = styled.div`
+  display: flex;
+  justify-items: center;
+  align-items: center;
+`;
+
+export const Aboutlists = styled.ul`
   height: 25rem;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  padding: 0 1.5rem;
 
   @media screen and (max-width: 1200px) {
     height: 20rem;
   }
+`;
+
+export const Skill = styled.li`
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
 `;

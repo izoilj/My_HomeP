@@ -3,10 +3,7 @@ import { Link as LinkR } from 'react-router-dom';
 import { Link as LinkS } from 'react-scroll';
 
 export const Nav = styled.nav`
-  background: ${({ scrollNav }) =>
-    scrollNav
-      ? '#000'
-      : 'transparent'}; //스크롤작동하면 #000색상 멈추면 다시돌아옴
+  background: ${({ scrollNav }) => (scrollNav ? '#000' : 'transparent')};
   height: 80px;
   margin-top: -80px;
   display: flex;
@@ -17,7 +14,6 @@ export const Nav = styled.nav`
   top: 0;
   z-index: 10;
   transition: 0.8s all ease;
-  /* width: 100%; */
 
   @media screen and (max-width: 960px) {
     transition: 0.8s all ease;
@@ -47,8 +43,8 @@ export const NavLogo = styled(LinkR)`
 `;
 
 export const LogoImg = styled.img`
-  width: 4rem;
-  margin-right: 5px;
+  width: 2.5rem;
+  margin-right: 10px;
 `;
 
 export const MobileIcon = styled.div`
@@ -71,8 +67,6 @@ export const NavMenu = styled.ul`
   align-items: center;
   list-style: none;
   text-align: center;
-  /* margin-right: -22px; */
-  /* width: 400px; */
 
   @media screen and (max-width: 768px) {
     display: none;
@@ -92,6 +86,7 @@ export const NavLinks = styled(LinkS)`
   height: 100%;
   cursor: pointer;
   font-weight: 600;
+  font-size: 1.2rem;
 
   &:hover {
     transition: all 0.2s ease-in-out;

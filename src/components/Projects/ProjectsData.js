@@ -7,7 +7,7 @@ export const ProjectsData = [
     title: 'Project Managrment',
     desc: 'Travel to over 100 unique places',
     img: PmImg,
-    alt: 'Tian Tan Buddha',
+    alt: 'Project Management Web',
     skill: 'React / Styled-Component / GraphQL',
     url: 'http://capstone-pm-tools-joy.netlify.app/',
     imgStart: false,

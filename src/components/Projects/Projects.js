@@ -9,8 +9,13 @@ import {
   ProjectsImg,
   ProjectsInfo,
   ProjectsText,
+  DetaileButton,
   ViewButton,
   OpenIcon,
+  CloseButton,
+  ModalImg,
+  ModalTopLine,
+  ModalInfo,
 } from './ProjectsElements';
 import Modal from 'react-modal';
 
@@ -22,7 +27,9 @@ const customStyles = {
     bottom: 'auto',
     marginRight: '-50%',
     transform: 'translate(-50%, -50%)',
-    // background: 'transparemt',
+    width: '40%',
+    height: '60%',
+    padding: '0',
   },
 };
 
@@ -56,17 +63,25 @@ const Projects = () => {
                   <h2>{item.title}</h2>
                   <span>{item.desc}</span>
                   <p>{item.skill}</p>
-                  <ViewButton onClick={openModal}>VIEW DETAILS</ViewButton>
+                  <DetaileButton onClick={openModal}>
+                    VIEW DETAILS
+                  </DetaileButton>
 
                   {/* Modal Start */}
                   <Modal isOpen={isModalOpen} style={customStyles}>
-                    <ViewButton onClick={closeModal}>X</ViewButton>
-                    <ProjectsImg src={item.img} alt={item.alt} />
-                    <h2>{item.title}</h2>
-                    <span>{item.desc}</span>
-                    <ViewButton onClick={() => window.open(item.url, '_blank')}>
-                      VIEW SITE <OpenIcon />
-                    </ViewButton>
+                    <CloseButton onClick={closeModal}>X</CloseButton>
+                    <ModalImg src={item.img} alt={item.alt} />
+                    <ModalInfo>
+                      <ModalTopLine>
+                        <h2>{item.title}</h2>
+                        <ViewButton
+                          onClick={() => window.open(item.url, '_blank')}
+                        >
+                          VIEW SITE <OpenIcon />
+                        </ViewButton>
+                      </ModalTopLine>
+                      <span>{item.desc}</span>
+                    </ModalInfo>
                   </Modal>
                   {/* Modal Finish */}
                 </ProjectsText>

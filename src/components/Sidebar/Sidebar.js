@@ -6,13 +6,8 @@ import {
   SidebarWrapper,
   SidebarMenu,
   SidebarLinks,
-  SideBtnWrap,
-  SidebarRouter,
 } from './SidebarElements';
 
-// 화면사이즈가 작아졌을때 필요한 컴포넌트
-// isOpen이 True일때,
-// toggle 버튼이 눌릴때마다, 매번 사이드바가 내려갔다 올라갔다 작동함
 const Sidebar = ({ isOpen, toggle }) => {
   return (
     <SidebarContainer isOpen={isOpen} onClick={toggle}>
@@ -24,19 +19,13 @@ const Sidebar = ({ isOpen, toggle }) => {
           <SidebarLinks to='about' onClick={toggle}>
             ABOUT
           </SidebarLinks>
-          <SidebarLinks to='discover' onClick={toggle}>
+          <SidebarLinks to='projects' onClick={toggle}>
             PROJECTS
           </SidebarLinks>
-          {/* <SidebarLinks to="services" onClick={toggle}>
-            Services
-          </SidebarLinks> */}
-          <SidebarLinks to='signup' onClick={toggle}>
+          <SidebarLinks to='contact' onClick={toggle}>
             CONTACT
           </SidebarLinks>
         </SidebarMenu>
-        <SideBtnWrap>
-          {/* <SidebarRouter to='/signin'>JYL</SidebarRouter> */}
-        </SideBtnWrap>
       </SidebarWrapper>
     </SidebarContainer>
   );

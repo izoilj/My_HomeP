@@ -4,7 +4,7 @@ import About from '../components/About/About';
 import Navbar from '../components/Navbar/Navbar';
 import Sidebar from '../components/Sidebar/Sidebar';
 import ProjectSection from '../components/Projects/Projects';
-import FooterSection from '../components/Footer/Footer';
+import Footer from '../components/Footer/Footer';
 import Contact from '../components/Contact/Contact';
 import BottomBar from '../components/BottomBar';
 
@@ -23,7 +23,7 @@ const Home = () => {
       <ProjectSection />
       <BottomBar />
       <Contact />
-      <FooterSection />
+      <Footer />
     </>
   );
 };

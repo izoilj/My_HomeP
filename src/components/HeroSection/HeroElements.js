@@ -19,7 +19,7 @@ export const HeroContainer = styled.div`
     bottom: 0;
     background: linear-gradient(
         180deg,
-        rgba(0, 0, 0, 0.4) 0%,
+        rgba(0, 0, 0, 0.6) 0%,
         rgba(0, 0, 0, 0.8) 100%
       ),
       linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, transparent 100%);
@@ -43,7 +43,6 @@ export const VideoBg = styled.video`
   height: 100%;
   -o-object-fit: cover;
   object-fit: cover;
-  /* background: #2e2714; */
   opacity: 80%;
 `;
 
