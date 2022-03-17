@@ -6,11 +6,9 @@ import {
   FooterWrap,
   SocialIconLink,
   SocialIcons,
-  LogoImg,
   SocialLogo,
   WebsiteRights,
 } from './FooterElements';
-import Logo from '../../assets/images/Logo.png';
 
 const Footer = () => {
   const toggleHome = () => {
