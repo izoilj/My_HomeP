@@ -12,9 +12,9 @@ import { BasicButton } from '../BasicButton';
 import emailjs from 'emailjs-com';
 import Swal from 'sweetalert2';
 
-const SERVICE_ID = 'service_5bjuah1';
-const TEMPLATE_ID = 'template_5gwuk3g';
-const USER_ID = 'Fj7jfjaLYpqRhpTr5';
+const SERVICE_ID = process.env.REACT_APP_SERVICE_ID;
+const TEMPLATE_ID = process.env.REACT_APP_TEMPLATE_ID;
+const USER_ID = process.env.REACT_APP_USER_ID;
 
 const Contact = () => {
   const handleOnSubmit = (e) => {
