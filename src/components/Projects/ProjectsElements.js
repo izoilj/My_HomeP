@@ -50,7 +50,7 @@ export const ProjectsCard = styled.div`
   &:hover {
     filter: grayscale(0%);
     transform: scale(1.05);
-    transition: 0.2s;
+    /* transition: 0.2s; */
     color: #000;
   }
 
