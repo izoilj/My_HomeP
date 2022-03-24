@@ -53,13 +53,13 @@ const Contact = () => {
           <FormWrap>
             <input
               type='text'
-              name='name'
+              name='from_name'
               placeholder='Enter your name...'
               required
             />
             <input
               type='email'
-              name='email'
+              name='from_email'
               placeholder='Enter your email...'
               required
             />
