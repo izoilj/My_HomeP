@@ -16,6 +16,14 @@ export const EmailImg = styled.img`
   margin-bottom: 5rem;
   height: 25rem;
   opacity: 85%;
+
+  @media screen and (max-width: 1000px) {
+    height: 20rem;
+  }
+
+  @media screen and (max-width: 500px) {
+    height: 13rem;
+  }
 `;
 
 export const ContactHeading = styled.div`

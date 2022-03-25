@@ -16,13 +16,12 @@ export const ProjectsH1 = styled.h1`
   font-size: clamp(1.2rem, 5vw, 3rem);
   text-align: center;
   color: #000;
-  /* margin-bottom: 7rem; */
 `;
 
 export const ProjectP = styled.p`
   font-size: clamp(0.5rem, 3vw, 1.5rem);
   color: #8a2be2;
-  margin-bottom: 7rem;
+  margin-bottom: 5rem;
 `;
 
 export const ProjectsWrapper = styled.div`
@@ -50,22 +49,18 @@ export const ProjectsCard = styled.div`
   &:hover {
     filter: grayscale(0%);
     transform: scale(1.05);
-    /* transition: 0.2s; */
-    color: #000;
   }
 
-  @media screen and (max-width: 820px) {
+  @media screen and (max-width: 868px) {
     grid-template-columns: 1fr;
     grid-template-areas: ${({ imgStart }) =>
       imgStart ? `"col1 col1" "col2 col2"` : `"col1 col1" "col2 col2"`};
     height: 30%;
-    margin-bottom: 10rem;
+    margin-bottom: 5rem;
 
     &:hover {
       filter: grayscale(0%);
       transform: scale(1.01);
-      transition: 0.2s;
-      color: #000;
     }
   }
 `;
@@ -78,9 +73,11 @@ export const ProjectsImg = styled.img`
   grid-area: col1;
   box-shadow: 0 3px 5px 2px #a5a5a5;
   /* z-index: 100; */
+  /* cursor: pointer; */
 
-  @media screen and (max-width: 820px) {
-    margin-bottom: 3rem;
+  @media screen and (max-width: 868px) {
+    /* margin-bottom: 3rem; */
+    background: none;
   }
 `;
 
@@ -96,7 +93,6 @@ export const ProjectsInfo = styled.div`
 
   h2 {
     margin-bottom: 1rem;
-    font-size: 2rem;
   }
 
   span {
@@ -108,15 +104,17 @@ export const ProjectsInfo = styled.div`
     margin-bottom: 1rem;
   }
 
-  @media screen and (max-width: 820px) {
+  @media screen and (max-width: 868px) {
     background: ${({ dark }) => (dark ? '#ddcbff' : '#fff')};
     padding: 1.5rem;
     box-shadow: 0 3px 5px 2px #a5a5a5;
-    border-radius: 30px;
+    border-radius: 0 0 30px 30px;
+    /* transition: 0.5s; */
   }
 
   @media screen and (max-width: 280px) {
     padding: 0 1rem;
+    border-radius: 0px;
   }
 `;
 
@@ -129,74 +127,6 @@ export const ProjectsText = styled.div`
   justify-content: center;
   align-items: center;
   z-index: 20;
-`;
-
-export const DetaileButton = styled.button`
-  background: #955eff;
-  color: #fff;
-  padding: 0.7rem 1rem;
-  outline: none;
-  border: none;
-  border-radius: 20px;
-  cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  &:hover {
-    font-weight: 600;
-    background: #8a2be2;
-  }
-`;
-
-export const ModalImg = styled.img`
-  width: 100%;
-  /* height: 90%; */
-  max-width: 100%;
-  object-fit: contain;
-
-  @media screen and (max-width: 820px) {
-    margin-bottom: 3rem;
-  }
-`;
-
-export const ModalInfo = styled.div`
-  padding: 0.5rem 2rem;
-
-  /* span {
-    margin-top: 5rem;
-  } */
-`;
-
-export const OpenIcon = styled(MdOpenInNew)`
-  font-size: 1rem;
-  margin-left: 0.5rem;
-`;
-
-export const CloseButton = styled.button`
-  background: #955eff;
-  width: 100%;
-  height: 2rem;
-  text-align: right;
-  color: #fff;
-  outline: none;
-  border: none;
-  padding-right: 1rem;
-  cursor: pointer;
-  float: right;
-  font-size: 18px;
-
-  &:hover {
-    font-weight: 600;
-    color: #ccc;
-  }
-`;
-
-export const ModalTopLine = styled.div`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 1rem;
 `;
 
 export const ViewButton = styled.button`
@@ -212,7 +142,12 @@ export const ViewButton = styled.button`
   align-items: center;
 
   &:hover {
-    font-weight: 600;
+    /* font-weight: 600; */
     background: #8a2be2;
   }
+`;
+
+export const OpenIcon = styled(MdOpenInNew)`
+  font-size: 1rem;
+  margin-left: 0.5rem;
 `;

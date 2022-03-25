@@ -1,33 +1,65 @@
 import React from 'react';
 import { MdSpeed } from 'react-icons/md';
 
+// - HTML  / CSS / JAVASCRIPT
+// - React
+// - Redux
+// - GraphQL
+// - NodeJS
+
+// - RestAPI
+// - MongoDB
+// - Express
+// - MySQL
+// Mongoose
+
 export const SkillData = [
   {
     icon: <MdSpeed />,
-    name: 'FRONTEND',
-    list: [
-      'HTML',
-      'CSS',
-      'Javascript',
-      'React',
-      'Redux',
-      'Gatsby',
-      'Typescript',
-    ],
+    name: 'HTML/CSS/JAVASCRIPT',
   },
   {
     icon: <MdSpeed />,
-    name: 'BACKEND',
-    list: ['GraphQL', 'MySQL', 'MongoDB', 'Mongoose', 'NodeJS'],
+    name: 'React',
   },
-  // {
-  //   icon: <MdSpeed />,
-  //   name: 'deploy',
-  //   list: ['Netlify', 'Haruku', 'Git'],
-  // },
   {
     icon: <MdSpeed />,
-    name: '',
-    list: ['Netlify', 'Git', 'AdobeXD', 'Photoshop', 'illustlator'],
+    name: 'Redux',
+  },
+  {
+    icon: <MdSpeed />,
+    name: 'GraphQL',
+  },
+  {
+    icon: <MdSpeed />,
+    name: 'NodeJS',
+  },
+  {
+    icon: <MdSpeed />,
+    name: 'RestAPI',
+  },
+  {
+    icon: <MdSpeed />,
+    name: 'MongoDB',
+  },
+  {
+    icon: <MdSpeed />,
+    name: 'Express',
+  },
+  {
+    icon: <MdSpeed />,
+    name: 'MySQL',
+  },
+  {
+    icon: <MdSpeed />,
+    name: 'Mongoose',
+  },
+  {
+    icon: <MdSpeed />,
+    name: 'Typescript',
+  },
+  {
+    icon: <MdSpeed />,
+    name: 'Gatsby',
   },
 ];

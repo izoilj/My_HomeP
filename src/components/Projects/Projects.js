@@ -1,4 +1,5 @@
-import { React, useState } from 'react';
+import { React } from 'react';
+// import { React, useState, useRef } from 'react';
 import { ProjectsData } from './ProjectsData';
 import {
   ProjectsContainer,
@@ -9,43 +10,37 @@ import {
   ProjectsImg,
   ProjectsInfo,
   ProjectsText,
-  DetaileButton,
   ViewButton,
   OpenIcon,
-  CloseButton,
-  ModalImg,
-  ModalTopLine,
-  ModalInfo,
 } from './ProjectsElements';
-import Modal from 'react-modal';
+// import SimpleImageSlider from 'react-simple-image-slider';
+// import Modal from 'react-modal';
 
-const customStyles = {
-  content: {
-    top: '50%',
-    left: '50%',
-    right: 'auto',
-    bottom: 'auto',
-    marginRight: '-50%',
-    transform: 'translate(-50%, -50%)',
-    border: '1px solid #ccc',
-    width: '40%',
-    height: '60%',
-    padding: '0',
-    // backgroundColor: 'rgba(0, 0, 0, 0.75)',
-  },
-};
+// const customStyles = {
+//   content: {
+//     top: '50%',
+//     left: '50%',
+//     right: 'auto',
+//     bottom: 'auto',
+//     marginRight: '-50%',
+//     transform: 'translate(-50%, -50%)',
+//     // background: 'transparemt',
+//     width: '40%',
+//     height: '60%',
+//     padding: '0',
+//   },
+// };
 
 const Projects = () => {
-  const [isModalOpen, setIsModalOpen] = useState(false);
+  // const [isModalOpen, setIsModalOpen] = useState(false);
+  // const slide = useRef();
 
-  const openModal = () => {
-    setIsModalOpen(true);
-  };
-
-  const closeModal = () => {
-    setIsModalOpen(false);
-  };
-
+  // const openModal = () => {
+  //   setIsModalOpen(true);
+  // };
+  // const closeModal = () => {
+  //   setIsModalOpen(false);
+  // };
   return (
     <>
       <ProjectsContainer id='projects'>
@@ -59,35 +54,31 @@ const Projects = () => {
               dark={item.dark}
               round='true'
             >
-              <ProjectsImg src={item?.img} alt={item?.alt} />
+              <ProjectsImg
+                src={item?.img}
+                alt={item?.alt}
+                // onClick={openModal}
+              />
+
               <ProjectsInfo dark={item.dark}>
                 <ProjectsText inSide={item.inSide}>
                   <h2>{item?.title}</h2>
                   <span>{item?.desc}</span>
                   <p>{item?.skill}</p>
-                  <DetaileButton onClick={openModal}>
-                    VIEW DETAILS
-                  </DetaileButton>
-
-                  {/* Modal Start */}
-                  <Modal isOpen={isModalOpen} style={customStyles}>
-                    <CloseButton onClick={closeModal}>X</CloseButton>
-                    <ModalImg src={item.img} alt={item.alt} />
-                    <ModalInfo>
-                      <ModalTopLine>
-                        <h2>{item.title}</h2>
-                        <ViewButton
-                          onClick={() => window.open(item.url, '_blank')}
-                        >
-                          VIEW SITE <OpenIcon />
-                        </ViewButton>
-                      </ModalTopLine>
-                      <span>{item.desc}</span>
-                    </ModalInfo>
-                  </Modal>
-                  {/* Modal Finish */}
+                  <ViewButton onClick={() => window.open(item.url, '_blank')}>
+                    VIEW SITE <OpenIcon />
+                  </ViewButton>
                 </ProjectsText>
               </ProjectsInfo>
+              {/* <Modal isOpen={isModalOpen} style={customStyles} ref={slide}>
+                <SimpleImageSlider
+                  width={'100%'}
+                  height={504}
+                  images={item.pImages}
+                  showBullets={true}
+                  showNavs={true}
+                />
+              </Modal> */}
             </ProjectsCard>
           ))}
         </ProjectsWrapper>

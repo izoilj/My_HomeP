@@ -76,19 +76,6 @@ const Contact = () => {
               round='true'
               dark='false'
               fontWeight='true'
-              // css={`
-              //   height: 48px;
-
-              //   @media screen and (max-width: 768px) {
-              //     width: 100%;
-              //     min-width: 350px;
-              //   }
-
-              //   @media screen and (max-width: 400px) {
-              //     width: 100%;
-              //     min-width: 250px;
-              //   }
-              // `}
             >
               SEND
             </BasicButton>

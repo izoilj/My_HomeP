@@ -68,10 +68,10 @@ export const AboutTwo = styled.div`
   padding: 0 2rem;
   margin-bottom: 3rem;
 
-  @media screen and (max-width: 1200px) {
-    /* height: 20rem; */
-    /* margin-bottom: 7rem; */
-  }
+  /* @media screen and (max-width: 1200px) {
+    height: 20rem;
+    margin-bottom: 7rem;
+  } */
 
   @media screen and (max-width: 1000px) {
     grid-template-columns: 1fr;
@@ -85,35 +85,48 @@ export const AboutImg = styled.img`
     height: 20rem;
   }
 
-  @media screen and (max-width: 868px) {
+  @media screen and (max-width: 1000px) {
     height: 15rem;
+    margin-bottom: 7rem;
+  }
+
+  @media screen and (max-width: 500px) {
+    height: 13rem;
     margin-bottom: 7rem;
   }
 `;
 
-export const AboutSkills = styled.div`
-  display: flex;
-  justify-items: center;
+export const AboutSkills = styled.ul`
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 2rem;
   align-items: center;
+  justify-items: center;
+  font-size: 1.3rem;
+
+  /* @media screen and (max-width: 1000px) {
+    margin-left: 10rem;
+  } */
 `;
 
-export const Aboutlists = styled.ul`
-  height: 25rem;
+export const Aboutlists = styled.li`
+  width: 100%;
+  /* list-style: square; */
+  padding: 0.5rem 2rem;
+  /* border-bottom: 1px solid #8a2be2; */
   list-style: none;
-  display: flex;
-  flex-direction: column;
-  justify-items: center;
-  align-items: center;
-  padding: 0 1.5rem;
 
-  @media screen and (max-width: 1200px) {
-    height: 20rem;
+  &::before {
+    content: '»';
+    color: #8a2be2;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
   }
 `;
 
-export const Skill = styled.li`
-  display: flex;
-  flex-direction: column;
-  justify-items: center;
-  align-items: center;
-`;
+// ul li::before {
+//   color: red;
+// }

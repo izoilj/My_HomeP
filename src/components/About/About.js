@@ -14,7 +14,6 @@ import {
   Description,
   Icon,
   Title,
-  Skill,
   Aboutlists,
 } from './AboutElements';
 
@@ -37,12 +36,7 @@ const About = () => {
           <AboutImg src={SkillImg} />
           <AboutSkills>
             {SkillData.map((skill, key) => (
-              <Aboutlists key={key}>
-                {skill.name}
-                {skill.list.map((s, i) => (
-                  <Skill key={i}>{s}</Skill>
-                ))}
-              </Aboutlists>
+              <Aboutlists key={key}>{skill.name}</Aboutlists>
             ))}
           </AboutSkills>
         </AboutTwo>

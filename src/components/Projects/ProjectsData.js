@@ -1,6 +1,23 @@
 // import React from 'react';
 import PmImg from '../../assets/images/pm.png';
 import ShopImg from '../../assets/images/p2.png';
+// import SimpleImageSlider from 'react-simple-image-slider';
+import pm1 from '../../assets/images/pm/pm1.png';
+import pm2 from '../../assets/images/pm/pm2.png';
+import pm3 from '../../assets/images/pm/pm3.png';
+import pm4 from '../../assets/images/pm/pm4.png';
+import pm5 from '../../assets/images/pm/pm5.png';
+import pm6 from '../../assets/images/pm/pm6.png';
+import pm7 from '../../assets/images/pm/pm7.png';
+import pm8 from '../../assets/images/pm/pm8.png';
+
+import ec1 from '../../assets/images/ch1.png';
+import ec2 from '../../assets/images/p2.png';
+
+const images1 = [pm1, pm2, pm3, pm4, pm5, pm6, pm7, pm8];
+
+const images2 = [ec2, ec1];
+const images3 = [pm1, pm2, pm3, pm4, pm5, pm6, pm7, pm8];
 
 export const ProjectsData = [
   {
@@ -15,6 +32,8 @@ export const ProjectsData = [
     dark: true,
     darkBtn: false,
     primary: true,
+    // pImages: [pm1, pm2, pm3, pm4, pm5, pm6, pm7, pm8],
+    pImages: images1,
   },
   {
     id: 'ecommerce',
@@ -28,6 +47,7 @@ export const ProjectsData = [
     dark: false,
     darkBtn: true,
     primary: true,
+    pImages: images2,
   },
   {
     id: 'blog',
@@ -41,5 +61,6 @@ export const ProjectsData = [
     dark: true,
     darkBtn: false,
     primary: true,
+    pImages: images3,
   },
 ];

@@ -9,7 +9,7 @@ import {
   HeroP,
   HeroBtnWrapper,
 } from './HeroElements';
-import Video from '../../assets/videos/video2.mp4';
+import Video from '../../assets/videos/video3.mp4';
 
 const Hero = () => {
   return (
