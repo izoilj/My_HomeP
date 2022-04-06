@@ -17,7 +17,7 @@ import ec2 from '../../assets/images/p2.png';
 const images1 = [pm1, pm2, pm3, pm4, pm5, pm6, pm7, pm8];
 
 const images2 = [ec2, ec1];
-const images3 = [pm1, pm2, pm3, pm4, pm5, pm6, pm7, pm8];
+// const images3 = [pm1, pm2, pm3, pm4, pm5, pm6, pm7, pm8];
 
 export const ProjectsData = [
   {
@@ -49,18 +49,18 @@ export const ProjectsData = [
     primary: true,
     pImages: images2,
   },
-  {
-    id: 'blog',
-    title: 'Blog Website',
-    desc: 'Made self-blog for postig my record',
-    img: PmImg,
-    alt: 'blog',
-    skill: 'Gatsby / TypeScript / EmotionJS / GraphQL',
-    url: '//capstone-pm-tools-joy.netlify.app/',
-    imgStart: false,
-    dark: true,
-    darkBtn: false,
-    primary: true,
-    pImages: images3,
-  },
+  // {
+  //   id: 'blog',
+  //   title: 'Blog Website',
+  //   desc: 'Made self-blog for postig my record',
+  //   img: PmImg,
+  //   alt: 'blog',
+  //   skill: 'Gatsby / TypeScript / EmotionJS / GraphQL',
+  //   url: '//capstone-pm-tools-joy.netlify.app/',
+  //   imgStart: false,
+  //   dark: true,
+  //   darkBtn: false,
+  //   primary: true,
+  //   pImages: images3,
+  // },
 ];
