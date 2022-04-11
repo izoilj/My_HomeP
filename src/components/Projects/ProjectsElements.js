@@ -37,8 +37,6 @@ export const ItemWrapper = styled.div`
   justify-content: center;
   width: 90rem;
   height: 65rem;
-  /* width: 100%;
-  height: 100%; */
   min-width: 280px;
   margin-bottom: 7rem;
   box-shadow: 0 3px 5px 2px #a5a5a5;
@@ -70,8 +68,8 @@ export const ItemWrapper = styled.div`
   }
 
   @media screen and (max-width: 400px) {
-    width: 18rem;
-    height: 15rem;
+    width: 22rem;
+    height: 19rem;
   }
 `;
 
@@ -81,6 +79,7 @@ export const ImgContainer = styled.div`
   width: 100%;
   height: 100%;
   min-width: 280px;
+  /* min-height: 200px; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -100,12 +99,10 @@ export const ProjectDetails = styled.div`
   padding: clamp(0.7rem, 3vw, 1.2rem);
 
   h2 {
-    /* font-size: 32px; */
     font-size: clamp(0.8rem, 3vw, 2rem);
   }
 
   span {
-    /* font-size: 18px; */
     font-size: clamp(0.7rem, 3vw, 1.2rem);
     padding: clamp(0.7rem, 3vw, 1.2rem);
   }
