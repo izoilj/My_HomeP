@@ -67,13 +67,8 @@ export const AboutTwo = styled.div`
   grid-gap: 10px;
   justify-items: center;
   align-items: center;
-  padding: 0 2rem;
+  /* padding: 0 2rem; */
   margin-bottom: 3rem;
-
-  /* @media screen and (max-width: 1200px) {
-    height: 20rem;
-    margin-bottom: 7rem;
-  } */
 
   @media screen and (max-width: 1000px) {
     grid-template-columns: 1fr;
@@ -93,7 +88,7 @@ export const AboutImg = styled.img`
   }
 
   @media screen and (max-width: 500px) {
-    height: 13rem;
+    height: 12rem;
     margin-bottom: 7rem;
   }
 `;
@@ -109,15 +104,19 @@ export const AboutSkills = styled.ul`
 
   @media screen and (max-width: 720px) {
     font-size: 1rem;
-    column-gap: 0.5rem;
+    /* column-gap: 0.5rem; */
+  }
+
+  @media screen and (max-width: 400px) {
+    font-size: 0.8rem;
+    /* column-gap: 0.5rem; */
+    margin-left: 3rem;
   }
 `;
 
 export const Aboutlists = styled.li`
   width: 100%;
-  /* list-style: square; */
   padding: 0.5rem 2rem;
-  /* border-bottom: 1px solid #8a2be2; */
   list-style: none;
 
   &::before {
@@ -129,7 +128,3 @@ export const Aboutlists = styled.li`
     margin-left: -1em;
   }
 `;
-
-// ul li::before {
-//   color: red;
-// }

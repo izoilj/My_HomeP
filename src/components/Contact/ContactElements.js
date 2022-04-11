@@ -47,6 +47,15 @@ export const ContactContent = styled.div`
   form {
     z-index: 10;
   }
+
+  @media screen and (max-width: 768px) {
+
+    width: 350px;
+  }
+
+  @media screen and (max-width: 400px) {
+
+  width: 350px;
 `;
 
 export const FormWrap = styled.div`
@@ -84,18 +93,6 @@ export const FormWrap = styled.div`
     ::placeholder {
       color: #000;
       opacity: 70%;
-    }
-  }
-
-  @media screen and (max-width: 768px) {
-    /* display: flex;
-    flex-direction: column; */
-    padding: 0 1rem;
-
-    input {
-      /* margin-bottom: 1.5rem; */
-      width: 100%;
-      margin-right: 0;
     }
   }
 `;

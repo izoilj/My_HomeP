@@ -35,8 +35,11 @@ export const ItemWrapper = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 60rem;
-  width: 100rem;
+  width: 90rem;
+  height: 65rem;
+  /* width: 100%;
+  height: 100%; */
+  min-width: 280px;
   margin-bottom: 7rem;
   box-shadow: 0 3px 5px 2px #a5a5a5;
   filter: grayscale(100%);
@@ -45,51 +48,77 @@ export const ItemWrapper = styled.div`
     filter: grayscale(0%);
   }
 
-  @media screen and (max-width: 868px) {
+  @media screen and (max-width: 1480px) {
     margin-bottom: 5rem;
+    width: 70rem;
     height: 50rem;
-    width: 10rem;
+  }
+
+  @media screen and (max-width: 1160px) {
+    width: 50rem;
+    height: 35rem;
+  }
+
+  @media screen and (max-width: 868px) {
+    width: 35rem;
+    height: 25rem;
+  }
+
+  @media screen and (max-width: 600px) {
+    width: 28rem;
+    height: 22rem;
+  }
+
+  @media screen and (max-width: 400px) {
+    width: 18rem;
+    height: 15rem;
   }
 `;
 
 export const ImgContainer = styled.div`
-  /* flex: 1; */
-  min-width: 280px;
+  /* width: 70rem; */
+  /* height: 30rem; */
   width: 100%;
   height: 100%;
+  min-width: 280px;
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
-
-  &:hover {
-    /* transform: scale(1.2); */
-    /* zoom: 105%; */
-  }
 `;
 
 export const ProjectDetails = styled.div`
   width: 100%;
-  height: 35%;
+  height: 25rem;
   color: #000;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   background: #d5d1db;
-  /* padding: 5rem; */
+  text-align: center;
+  padding: clamp(0.7rem, 3vw, 1.2rem);
 
   h2 {
-    font-size: 32px;
-    margin-bottom: 2rem;
+    /* font-size: 32px; */
+    font-size: clamp(0.8rem, 3vw, 2rem);
   }
 
   span {
-    font-size: 18px;
-    margin-bottom: 2rem;
+    /* font-size: 18px; */
+    font-size: clamp(0.7rem, 3vw, 1.2rem);
+    padding: clamp(0.7rem, 3vw, 1.2rem);
   }
 
   p {
-    font-size: 18px;
+    font-size: clamp(0.6rem, 3vw, 1rem);
+  }
+
+  @media screen and (max-width: 1160px) {
+    height: 15rem;
+  }
+
+  @media screen and (max-width: 868px) {
+    height: 12rem;
   }
 `;

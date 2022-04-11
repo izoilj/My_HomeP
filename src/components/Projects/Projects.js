@@ -10,6 +10,7 @@ import {
   ProjectDetails,
 } from './ProjectsElements';
 import SimpleImageSlider from 'react-simple-image-slider';
+// import { css } from 'styled-components';
 
 const Projects = () => {
   return (
@@ -21,6 +22,8 @@ const Projects = () => {
           <ItemWrapper key={index}>
             <ImgContainer>
               <SimpleImageSlider
+                // width={'60vw'}
+                // height={'60vh'}
                 width={'100%'}
                 height={'100%'}
                 images={item.pImages}
@@ -28,6 +31,17 @@ const Projects = () => {
                 showNavs={true}
                 navStyle={2}
                 navMargin={10}
+                // css={`
+                //   @media screen and (max-width: 768px) {
+                //     width: 30vw;
+                //     height: 30vh;
+                //     min-width: 350px;
+                //   }
+                //   @media screen and (max-width: 400px) {
+                //     width: 100%;
+                //     min-width: 250px;
+                //   }
+                // `}
               />
             </ImgContainer>
             <ProjectDetails>
