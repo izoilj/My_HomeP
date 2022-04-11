@@ -1,89 +1,44 @@
 import { React } from 'react';
-// import { React, useState, useRef } from 'react';
 import { ProjectsData } from './ProjectsData';
 import {
   ProjectsContainer,
   ProjectsH1,
   ProjectP,
   ProjectsWrapper,
-  ProjectsCard,
-  ProjectsImg,
-  ProjectsInfo,
-  ProjectsText,
-  ViewButton,
-  OpenIcon,
+  ItemWrapper,
+  ImgContainer,
+  ProjectDetails,
 } from './ProjectsElements';
-// import SimpleImageSlider from 'react-simple-image-slider';
-// import Modal from 'react-modal';
-
-// const customStyles = {
-//   content: {
-//     top: '50%',
-//     left: '50%',
-//     right: 'auto',
-//     bottom: 'auto',
-//     marginRight: '-50%',
-//     transform: 'translate(-50%, -50%)',
-//     // background: 'transparemt',
-//     width: '40%',
-//     height: '60%',
-//     padding: '0',
-//   },
-// };
+import SimpleImageSlider from 'react-simple-image-slider';
 
 const Projects = () => {
-  // const [isModalOpen, setIsModalOpen] = useState(false);
-  // const slide = useRef();
-
-  // const openModal = () => {
-  //   setIsModalOpen(true);
-  // };
-  // const closeModal = () => {
-  //   setIsModalOpen(false);
-  // };
   return (
-    <>
-      <ProjectsContainer id='projects'>
-        <ProjectsH1>MY PROJECTS</ProjectsH1>
-        <ProjectP>Somthing I have built</ProjectP>
-        <ProjectsWrapper>
-          {ProjectsData?.map((item, index) => (
-            <ProjectsCard
-              key={index}
-              imgStart={item.imgStart}
-              dark={item.dark}
-              round='true'
-            >
-              <ProjectsImg
-                src={item?.img}
-                alt={item?.alt}
-                // onClick={openModal}
+    <ProjectsContainer id='projects'>
+      <ProjectsH1>MY PROJECTS</ProjectsH1>
+      <ProjectP>Somthing I have built</ProjectP>
+      <ProjectsWrapper>
+        {ProjectsData?.map((item, index) => (
+          <ItemWrapper key={index}>
+            <ImgContainer>
+              <SimpleImageSlider
+                width={'100%'}
+                height={'100%'}
+                images={item.pImages}
+                showBullets={true}
+                showNavs={true}
+                navStyle={2}
+                navMargin={10}
               />
-
-              <ProjectsInfo dark={item.dark}>
-                <ProjectsText inSide={item.inSide}>
-                  <h2>{item?.title}</h2>
-                  <span>{item?.desc}</span>
-                  <p>{item?.skill}</p>
-                  <ViewButton onClick={() => window.open(item.url, '_blank')}>
-                    VIEW SITE <OpenIcon />
-                  </ViewButton>
-                </ProjectsText>
-              </ProjectsInfo>
-              {/* <Modal isOpen={isModalOpen} style={customStyles} ref={slide}>
-                <SimpleImageSlider
-                  width={'100%'}
-                  height={504}
-                  images={item.pImages}
-                  showBullets={true}
-                  showNavs={true}
-                />
-              </Modal> */}
-            </ProjectsCard>
-          ))}
-        </ProjectsWrapper>
-      </ProjectsContainer>
-    </>
+            </ImgContainer>
+            <ProjectDetails>
+              <h2>{item?.title}</h2>
+              <span>{item?.desc}</span>
+              <p>{item?.skill}</p>
+            </ProjectDetails>
+          </ItemWrapper>
+        ))}
+      </ProjectsWrapper>
+    </ProjectsContainer>
   );
 };
 
