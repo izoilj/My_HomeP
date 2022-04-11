@@ -47,6 +47,8 @@ export const ItemWrapper = styled.div`
 
   @media screen and (max-width: 868px) {
     margin-bottom: 5rem;
+    height: 50rem;
+    width: 10rem;
   }
 `;
 

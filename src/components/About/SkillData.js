@@ -24,6 +24,10 @@ export const SkillData = [
   },
   {
     icon: <MdSpeed />,
+    name: 'Styled-component',
+  },
+  {
+    icon: <MdSpeed />,
     name: 'Redux',
   },
   {
@@ -49,10 +53,6 @@ export const SkillData = [
   {
     icon: <MdSpeed />,
     name: 'MySQL',
-  },
-  {
-    icon: <MdSpeed />,
-    name: 'Mongoose',
   },
   {
     icon: <MdSpeed />,

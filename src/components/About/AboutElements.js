@@ -57,7 +57,9 @@ export const Title = styled.div`
   margin-bottom: 0.5rem;
 `;
 
-export const Description = styled.p``;
+export const Description = styled.p`
+  font-size: clamp(1rem, 2vw, 1.2rem);
+`;
 
 export const AboutTwo = styled.div`
   display: grid;
@@ -100,14 +102,15 @@ export const AboutSkills = styled.ul`
   width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  column-gap: 2rem;
+  column-gap: 1rem;
   align-items: center;
   justify-items: center;
   font-size: 1.3rem;
 
-  /* @media screen and (max-width: 1000px) {
-    margin-left: 10rem;
-  } */
+  @media screen and (max-width: 720px) {
+    font-size: 1rem;
+    column-gap: 0.5rem;
+  }
 `;
 
 export const Aboutlists = styled.li`

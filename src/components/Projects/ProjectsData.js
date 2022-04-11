@@ -21,6 +21,10 @@ import sh10 from '../../assets/images/shop/shop10.png';
 import shopVideo from '../../assets/videos/shopVideo.mp4';
 import pmVideo from '../../assets/videos/pmVideo.mp4';
 
+// const images1 = [pm1, pm2, pm3, pm4, pm5, pm6, pm7, pm8];
+
+// const images2 = [ec2, ec1];
+
 export const ProjectsData = [
   {
     id: 'pmTool',
@@ -48,6 +52,22 @@ export const ProjectsData = [
     dark: false,
     darkBtn: true,
     primary: true,
+
     pVideo: shopVideo,
   },
+
+  // {
+  //   id: 'blog',
+  //   title: 'Blog Website',
+  //   desc: 'Made self-blog for postig my record',
+  //   img: PmImg,
+  //   alt: 'blog',
+  //   skill: 'Gatsby / TypeScript / EmotionJS / GraphQL',
+  //   url: '//capstone-pm-tools-joy.netlify.app/',
+  //   imgStart: false,
+  //   dark: true,
+  //   darkBtn: false,
+  //   primary: true,
+  //   pImages: images3,
+  // },
 ];
