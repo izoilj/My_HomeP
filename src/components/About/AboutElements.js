@@ -115,7 +115,7 @@ export const AboutSkills = styled.ul`
 `;
 
 export const Aboutlists = styled.li`
-  width: 100%;
+  width: 90%;
   padding: 0.5rem 2rem;
   list-style: none;
 
@@ -126,5 +126,9 @@ export const Aboutlists = styled.li`
     display: inline-block;
     width: 1em;
     margin-left: -1em;
+  }
+
+  @media screen and (max-width: 400px) {
+    padding: 0.5rem;
   }
 `;

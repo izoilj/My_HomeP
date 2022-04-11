@@ -49,13 +49,12 @@ export const ContactContent = styled.div`
   }
 
   @media screen and (max-width: 768px) {
-
     width: 350px;
   }
 
   @media screen and (max-width: 400px) {
-
-  width: 350px;
+    width: 350px;
+  }
 `;
 
 export const FormWrap = styled.div`
