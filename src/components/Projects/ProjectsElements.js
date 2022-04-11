@@ -25,7 +25,7 @@ export const ProjectP = styled.p`
 `;
 
 export const ProjectsWrapper = styled.div`
-  padding: 0 2rem;
+  /* padding: 0 2rem; */
   margin-bottom: 3rem;
   z-index: 3;
 `;
@@ -67,10 +67,15 @@ export const ItemWrapper = styled.div`
     height: 22rem;
   }
 
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 420px) {
     width: 22rem;
-    height: 19rem;
+    height: 18rem;
   }
+
+  /* @media screen and (max-width: 380px) {
+    width: 19rem;
+    height: 17rem;
+  } */
 `;
 
 export const ImgContainer = styled.div`

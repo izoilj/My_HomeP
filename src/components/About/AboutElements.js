@@ -110,12 +110,12 @@ export const AboutSkills = styled.ul`
   @media screen and (max-width: 400px) {
     font-size: 0.8rem;
     /* column-gap: 0.5rem; */
-    margin-left: 3rem;
+    margin-left: 1.5rem;
   }
 `;
 
 export const Aboutlists = styled.li`
-  width: 90%;
+  width: 100%;
   padding: 0.5rem 2rem;
   list-style: none;
 
@@ -129,6 +129,7 @@ export const Aboutlists = styled.li`
   }
 
   @media screen and (max-width: 400px) {
+    /* width: 80%; */
     padding: 0.5rem;
   }
 `;
